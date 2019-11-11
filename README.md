@@ -1,5 +1,6 @@
 # AC-I
-#Aula1 - Conceitos básicos de Arquitetura de Computadores. Programação em linguagem assembly: estrutura de um programa e instruções básicas do MIPS. Simulador MARS.
+
+Aula1 - Conceitos básicos de Arquitetura de Computadores. Programação em linguagem assembly: estrutura de um programa e instruções básicas do MIPS. Simulador MARS.
 
 Aula2 - Utilização de instruções lógicas e de deslocamento sobre inteiros no MIPS. Utilização das diretivas do assembler do MARS.
 
