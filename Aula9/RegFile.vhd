@@ -31,7 +31,7 @@ begin
 	begin 
 		if(rising_edge(clk)) then 
 			if(writeEnable = '1') then
-				s_memory(to_integer(unsigned(writeData))) <= writeData;
+				s_memory(to_integer(unsigned(writeAddr))) <= writeData;
 			end if;
 		end if;
 	end process;

@@ -34,9 +34,9 @@ begin
 			when "001" => 
 				s_res <= op1 or op2;
 			when "010" => 
-				s_res <= std_logic_vector(s_op1 and s_op2);
+				s_res <= std_logic_vector(s_op1 + s_op2);
 			when "110" => 
-				s_res <= std_logic_vector(s_op1 and s_op2);
+				s_res <= std_logic_vector(s_op1 + s_op2);
 			when "111" => 
 				if(signed(op1) < signed(op2)) then 
 					s_res <= X"00000001";
