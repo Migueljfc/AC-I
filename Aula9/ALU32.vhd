@@ -20,7 +20,7 @@ architecture Behavioral of ALU32 is
 	signal s_op1 : unsigned(31 downto 0);
 begin 
 	s_op1  <= unsigned(op1);
-	s_op2  <= not(unsigned(op2)) + 1 when oper = "110" 
+	s_op2  <= not(unsigned(op2)) + 1 when oper = "110" --Complemento para dois
 										 else unsigned(op2);
 								
 	res  <= s_res;
