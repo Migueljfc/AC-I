@@ -19,7 +19,16 @@ architecture Behavioral of DataMemory is
 	constant NUM_WORS : positive := (2** ADDR_BUS_SIZE);
 	subtype TData is std_logic_vector(DATA_BUS_SIZE - 1 downto 0);
 	type TMemory is array(0 to NUM_WORS - 1) of TData;
-	signal s_memory : TMemory;
+	signal s_memory : TMemory := (
+									-- .data
+									-- array: .word 20, 17, -2, 25, 5, -1
+									X"00000014", -- .word 20
+									X"00000011", -- .word 17
+									X"FFFFFFFE", -- .word -2
+									X"00000019", -- .word 25
+									X"00000005", -- .word 5
+									X"FFFFFFFF", -- .word -1
+									others => X"00000000");
 begin 
 	process(clk)
 	begin
